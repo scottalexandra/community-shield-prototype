@@ -18,9 +18,17 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+group :test do
+  gem 'factory_bot'
+end
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 4.0.2'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov'
+  gem 'shoulda-matchers'
 end
 
 group :development do
