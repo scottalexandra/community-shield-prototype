@@ -1,8 +1,8 @@
 <h2>Welcome Back!</h2>
 <p>Login to continue</p>
 
-<%= form_tag('/login', method: "post") do %>
-  <%= text_field_tag(:email) %>
-  <%= text_field_tag(:password) %>
-  <%= submit_tag('Login') %>
+<%= form_tag('/login', method: :post) do %>
+  <%= text_field_tag :email %>
+  <%= text_field_tag :password %>
+  <%= submit_tag 'Login' %>
 <% end %>
